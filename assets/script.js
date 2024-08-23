@@ -1,10 +1,10 @@
 window.onload = () => {
-//neccessary 
+//neccessary variables configurations
   let nInterval;
   const start = document.querySelector("div > button:nth-child(1)");
   const stop = document.querySelector("button:nth-child(2)");
-
-  start.addEventListener("click", () => {
+ 
+  start.addEventListener("click", () => { //setting an event to display time by user
     let now = new Date();
     let hours = now.getHours();
     let minutes = now.getMinutes();
@@ -22,6 +22,7 @@ window.onload = () => {
       if (hours == 24) {
         hours = 0;
       }
+      //display format to always have 2 numbers as display
       document.querySelector("button:nth-child(1)").innerText =
         (hours < 10 ? "0" : "") +
         hours +
@@ -33,6 +34,7 @@ window.onload = () => {
         seconds;
     }, 1000);
   });
+  //logic to be able to stop the time at any desired moment
   function stopTime() {
     clearInterval(nInterval);
     nInterval = null;

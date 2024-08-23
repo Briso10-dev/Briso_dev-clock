@@ -1,4 +1,4 @@
-# Projet : Designing a time clock 
+# Project : Designing a time clock 
 
 ## Screenshots
 ![local time](./assets/images/final.png)
