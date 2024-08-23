@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projet 10</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <title>Projet 10: Time clock</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-[url('/image/paysage.png')] bg-no-repeat bg-cover text-white">
-    <section class="flex flex-col h-screen items-center justify-center gap-[6rem] w-full">
-    <button class=" text-[4rem] border-2 bg-gradient-to-r from-[#28272F] to-[#040404]  w-[31rem] h-[13rem] rounded-[2rem]"> Briso</button>
-    <button class="bg-gradient-to-r from-[#28272F] to-[#040404] text-center text-[2rem] border-2 w-[15rem] h-[5rem] rounded-[1rem]"> Start</button>
+<body class="text-white bg-no-repeat bg-cover font-popins bg-paysage">
+    <section class="flex flex-col h-screen items-center justify-center gap-[5rem] w-full">
+    <button class=" text-[3rem] border-2 bg-gradient-to-r from-color1 to-color2  w-[28rem] h-[10rem] rounded-[2rem]">Maitre du temp</button>
+    <div class="flex justify-center items-center gap-[1rem]">
+    <button class="bg-gradient-to-r from-color1 to-color2 text-center text-[2rem] border-2 w-[19rem] h-[5rem] rounded-[1rem]">Commencez le temp </button>
+    <button class="bg-gradient-to-r from-color1 to-color2  text-center text-[2rem] border-2 w-[16rem] h-[5rem] rounded-[1rem]"> Arretez le temp</button>
+    </div>
     </section>
-    <script src="/assets/script.js"></script>
+    <script src="./assets/tailwind.config.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
-background: linear-gradient(144.48deg, #28272F 9.13%, #040404 62.89%);
+
